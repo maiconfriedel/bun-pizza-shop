@@ -1,0 +1,16 @@
+meta {
+  name: Auth from Link
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3333/auth-links/authenticate?code=sui3cou1dgtgpr49v3hgp2w1&redirect=http%3A%2F%2Flocalhost%3A5173
+  body: none
+  auth: none
+}
+
+params:query {
+  code: sui3cou1dgtgpr49v3hgp2w1
+  redirect: http://localhost:5173
+}
