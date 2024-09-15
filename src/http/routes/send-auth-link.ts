@@ -31,6 +31,8 @@ export const sendAuthLink = new Elysia().post(
     authLink.searchParams.set('redirect', env.AUTH_REDIRECT_URL)
 
     console.log('authLink', authLink.toString())
+
+    return authLink.toString()
   },
   {
     body: t.Object({ email: t.String({ format: 'email' }) }),
