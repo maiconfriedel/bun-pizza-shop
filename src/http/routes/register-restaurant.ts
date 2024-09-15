@@ -30,5 +30,6 @@ export const registerRestaurant = new Elysia().post(
       email: t.String({ format: 'email' }),
       phone: t.String(),
     }),
+    detail: { tags: ['Restaurant'] },
   },
 )

@@ -43,5 +43,6 @@ export const authenticateFromLink = new Elysia().use(auth).get(
   },
   {
     query: t.Object({ code: t.String(), redirect: t.String() }),
+    detail: { tags: ['Auth'] },
   },
 )
